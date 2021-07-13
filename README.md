@@ -5,7 +5,7 @@ A program for the Raspberry Pi Pico written in C to output the current temperatu
 The LEDs must be connected to the following pins:
 
 - For the integer digits: `0, 1, 2, 5, 6, 7`
-- For the decimal decimal places: `10, 13, 14, 15`
+- For the decimal places: `10, 13, 14, 15`
 
 ## compilation
 To compile the program properly you need the raspberry-pico-sdk (it's also available in the AUR) and cmake.
