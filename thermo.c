@@ -50,10 +50,10 @@ int main() {
 	const uint LED_PINS[] = {0, 1, 2, 5, 6, 7, 10, 13, 14, 15};
 
 	// initialize stdio
-    stdio_init_all();
+	stdio_init_all();
 
 	// initialize ADC
-    adc_init();
+	adc_init();
 
 	// initialize GPIOs
 	for (int i = 0; i < 10; ++i) {
@@ -65,10 +65,10 @@ int main() {
 	// power on the temperature sensor
 	adc_set_temp_sensor_enabled(true);
 
-    // select ADC input 4 (temperature sensor)
-    adc_select_input(4);
+	// select ADC input 4 (temperature sensor)
+	adc_select_input(4);
 
-    while (1) {
+	while (1) {
 
 		// declare and initialize variables
 		const float conversion_factor = 3.3f / (1 << 12);
@@ -113,5 +113,5 @@ int main() {
 		for (int i = 0; i < 10; ++i) {
 			gpio_put(LED_PINS[i], 0);
 		}
-    }
+	}
 }
